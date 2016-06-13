@@ -1,0 +1,57 @@
+<html>
+       <head>
+         <title>Ajax Streaming Test</title>
+       </head>
+       <body>
+          <script type="text/javascript">
+           function test(){
+			   
+             xhr = new XMLHttpRequest();
+             xhr.open("GET", "response.php", true);
+             xhr.onprogress = function(e) {
+				 alert('hi');
+               alert(e.currentTarget.responseText);
+             }
+             xhr.onreadystatechange = function() {
+               if (xhr.readyState == 4) {
+				   document.getElementById("x").innerHTML = xmlhttp.responseText;
+                 //console.log("Complete = " + xhr.responseText);
+               }
+             }
+             xhr.send();
+           };
+		   function onspot()
+{
+	
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  alert('object created1');
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+   alert('object created2');
+  }
+xmlhttp.onreadystatechange=function()
+  {
+	   alert('object created3');
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+		 alert('object created4');
+  document.getElementById("x").innerHTML = xmlhttp.responseText;
+	}
+  }
+xmlhttp.open("GET","response.php",true);
+xmlhttp.onprogress = function(e) {
+				  alert('object created5');
+               alert(e.currentTarget.responseText);
+             }
+xmlhttp.send();
+}  
+         </script>
+         <input type="button" value="test" onClick="onspot()">
+         <div id="x">
+         </div>
+       </body>
+	</html>

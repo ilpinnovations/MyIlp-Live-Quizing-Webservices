@@ -1,0 +1,23 @@
+Submit Answers : www.theinspirer.in/iBuzzer/answer.php?q_id=''&ans_option=''&emp_id=''
+
+Answers Count for Analytics : www.theinspirer.in/iBuzzer/answers_count.php?q_id=''
+
+Centre Count for analytics : www.theinspirer.in/iBuzzer/centre_count.php?f_id=''
+
+Correct answer count for analytics : www.theinspirer.in/iBuzzer/correct_ans_count.php?q_id=''
+
+Delete Question : www.theinspirer.in/iBuzzer/delete_ques.php?q_id=''
+
+Edit Questions : www.theinspirer.in/iBuzzer/edit_questions.php?q_id=''&option1=''&option2=''&option3=''&option4=''&question=''&correct_answer=''
+
+Faculty Employee Question : www.theinspirer.in/iBuzzer/emp_questions.php?emp_id=''
+
+Login : www.theinspirer.in/iBuzzer/login.php?emp_id=''
+
+Submit Questions : www.theinspirer.in/iBuzzer/question.php?emp_id=''&option1=''&option2=''&option3=''&option4=''&question=''&correct_answer=''
+
+Unanswered questions by Employee : www.theinspirer.in/iBuzzer/unanswered_ques.php?emp_id=''
+
+Update status of question : www.theinspirer.in/iBuzzer/update_status.php?q_id=''&status='' (send status as 1 if u want to activate the questions else send 0 to deactivate)
+
+Check if the Employee is faculty : www.theinspirer.in/iBuzzer/is_faculty.php?emp_id=''
